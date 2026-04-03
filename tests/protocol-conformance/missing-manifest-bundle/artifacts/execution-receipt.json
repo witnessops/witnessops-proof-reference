@@ -1,0 +1,7 @@
+{
+  "id": "receipt-005",
+  "type": "execution-receipt",
+  "producer": "OFFSEC",
+  "timestamp": "2026-03-14T12:40:00Z",
+  "signature": "sig-valid-receipt-005"
+}

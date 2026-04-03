@@ -1,0 +1,8 @@
+{
+  "status": "valid",
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/valid-minimal-bundle",
+  "bundleDigest": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+  "errors": [],
+  "verifiedArtifacts": ["execution-receipt", "proof-object"]
+}

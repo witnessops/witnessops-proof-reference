@@ -1,0 +1,8 @@
+{
+  "id": "trace-002",
+  "type": "runtime-trace",
+  "producer": "Qin",
+  "timestamp": "2026-03-14T12:10:01Z",
+  "lineage": ["receipt-002"],
+  "traceHash": "sha256:trace-valid-002"
+}

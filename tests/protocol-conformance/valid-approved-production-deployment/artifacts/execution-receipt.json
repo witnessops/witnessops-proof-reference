@@ -1,0 +1,7 @@
+{
+  "id": "receipt-deploy-001",
+  "type": "execution-receipt",
+  "producer": "OFFSEC",
+  "timestamp": "2026-03-22T11:30:00Z",
+  "signature": "sig-valid-receipt-deploy-001"
+}

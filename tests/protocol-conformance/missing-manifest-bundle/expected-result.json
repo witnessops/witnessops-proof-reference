@@ -1,0 +1,8 @@
+{
+  "status": "invalid",
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/missing-manifest-bundle",
+  "bundleDigest": "sha256:missing-manifest-bundle",
+  "errors": ["FAILURE_MANIFEST_MISSING"],
+  "verifiedArtifacts": []
+}

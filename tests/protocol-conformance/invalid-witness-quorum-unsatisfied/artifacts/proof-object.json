@@ -1,0 +1,7 @@
+{
+  "id": "proof-object-010",
+  "type": "proof-object",
+  "receiptRef": "receipt-010",
+  "bundleDigest": "sha256:9999999999999999999999999999999999999999999999999999999999999999",
+  "signature": "sig-valid-proof-010"
+}

@@ -1,0 +1,24 @@
+{
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/invalid-witness-lineage-mismatch",
+  "bundleDigest": "sha256:1414141414141414141414141414141414141414141414141414141414141414",
+  "witnessPolicy": {
+    "type": "quorum",
+    "required": 2,
+    "available": 2
+  },
+  "artifacts": [
+    {
+      "id": "receipt-013",
+      "type": "execution-receipt",
+      "path": "artifacts/execution-receipt.json",
+      "hash": "sha256:6c58c4ed107c74f3fd866040b709223b54f13ae888f77aaece937cd08129ff8f"
+    },
+    {
+      "id": "proof-object-013",
+      "type": "proof-object",
+      "path": "artifacts/proof-object.json",
+      "hash": "sha256:45dfeda08aa2b70a35b550102b866fd6f5cfd606ef09efc9ef2be555698a11bf"
+    }
+  ]
+}

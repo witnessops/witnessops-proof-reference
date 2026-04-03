@@ -1,0 +1,8 @@
+{
+  "status": "invalid",
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/invalid-signature",
+  "bundleDigest": "sha256:5555555555555555555555555555555555555555555555555555555555555555",
+  "errors": ["FAILURE_SIGNATURE_INVALID"],
+  "verifiedArtifacts": ["execution-receipt"]
+}

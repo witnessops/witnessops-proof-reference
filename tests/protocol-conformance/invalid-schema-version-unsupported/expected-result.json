@@ -1,0 +1,8 @@
+{
+  "status": "invalid",
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/invalid-schema-version-unsupported",
+  "bundleDigest": "sha256:1212121212121212121212121212121212121212121212121212121212121212",
+  "errors": ["FAILURE_SCHEMA_VERSION_UNSUPPORTED"],
+  "verifiedArtifacts": ["execution-receipt"]
+}

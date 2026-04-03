@@ -1,0 +1,6 @@
+{
+  "id": "witness-deploy-approver",
+  "type": "deployment-approver",
+  "bundleDigest": "sha256:4444444444444444444444444444444444444444444444444444444444444444",
+  "signature": "sig-valid-witness-deploy-approver"
+}

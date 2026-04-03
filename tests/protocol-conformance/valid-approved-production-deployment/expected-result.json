@@ -1,0 +1,9 @@
+{
+  "status": "valid",
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/valid-approved-production-deployment",
+  "bundleDigest": "sha256:4444444444444444444444444444444444444444444444444444444444444444",
+  "errors": [],
+  "verifiedArtifacts": ["execution-receipt", "runtime-trace", "witness-record", "proof-object"],
+  "witnesses": ["witness-deploy-approver", "witness-runtime-observer"]
+}

@@ -1,0 +1,36 @@
+{
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/valid-approved-production-deployment",
+  "bundleDigest": "sha256:4444444444444444444444444444444444444444444444444444444444444444",
+  "witnessPolicy": {
+    "type": "quorum",
+    "required": 2,
+    "available": 2
+  },
+  "artifacts": [
+    {
+      "id": "receipt-deploy-001",
+      "type": "execution-receipt",
+      "path": "artifacts/execution-receipt.json",
+      "hash": "sha256:1428384282a0f82fa1e9cfdde9a42c8318a6a72efd74ecf021c34ae487b991d2"
+    },
+    {
+      "id": "trace-deploy-001",
+      "type": "runtime-trace",
+      "path": "artifacts/runtime-trace.json",
+      "hash": "sha256:9ea97327696634f996ec5e336839926e9ec5a3ba70d09ecb177aae9465fac067"
+    },
+    {
+      "id": "witness-record-deploy-001",
+      "type": "witness-record",
+      "path": "artifacts/witness-record.json",
+      "hash": "sha256:368f68bddee78d9c63e2f1fb15aed3c59ef17353ad2268bbb41ef48fb89e6aa9"
+    },
+    {
+      "id": "proof-object-deploy-001",
+      "type": "proof-object",
+      "path": "artifacts/proof-object.json",
+      "hash": "sha256:6d5db17e3d8beaba1fb6e29e505483184303806185223cdd49a91f0f2b90e919"
+    }
+  ]
+}

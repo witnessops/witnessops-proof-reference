@@ -1,0 +1,8 @@
+{
+  "status": "valid",
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/canonical-reference-bundle",
+  "bundleDigest": "sha256:0000000000000000000000000000000000000000000000000000000000000001",
+  "errors": [],
+  "verifiedArtifacts": ["execution-receipt", "proof-object"]
+}

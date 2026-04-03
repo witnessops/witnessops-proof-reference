@@ -1,0 +1,24 @@
+{
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/valid-witness-attested-bundle",
+  "bundleDigest": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
+  "witnessPolicy": {
+    "type": "quorum",
+    "required": 2,
+    "available": 3
+  },
+  "artifacts": [
+    {
+      "id": "receipt-003",
+      "type": "execution-receipt",
+      "path": "artifacts/execution-receipt.json",
+      "hash": "sha256:4ade39230e1cc58a1e795a80c536ae3bb7775401aee6e8cbbe3aa3db83b0f75b"
+    },
+    {
+      "id": "proof-object-003",
+      "type": "proof-object",
+      "path": "artifacts/proof-object.json",
+      "hash": "sha256:7faabf6d0b6fa57223d7487e2869ffaad408e3f96ccbdb093cfbdd4256480edb"
+    }
+  ]
+}

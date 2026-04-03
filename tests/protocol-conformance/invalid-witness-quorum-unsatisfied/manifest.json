@@ -1,0 +1,24 @@
+{
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/invalid-witness-quorum-unsatisfied",
+  "bundleDigest": "sha256:9999999999999999999999999999999999999999999999999999999999999999",
+  "witnessPolicy": {
+    "type": "quorum",
+    "required": 3,
+    "available": 3
+  },
+  "artifacts": [
+    {
+      "id": "receipt-010",
+      "type": "execution-receipt",
+      "path": "artifacts/execution-receipt.json",
+      "hash": "sha256:9a05b237235842ccff9a47340e3612bdd04d4811647944b947234c1f6dd3fcc0"
+    },
+    {
+      "id": "proof-object-010",
+      "type": "proof-object",
+      "path": "artifacts/proof-object.json",
+      "hash": "sha256:a489e602dbfe4983a00cab8a53dc0343178164dd3e7e7b8ca376a44112853472"
+    }
+  ]
+}

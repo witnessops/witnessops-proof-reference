@@ -1,0 +1,13 @@
+{
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/invalid-schema-version-unsupported",
+  "bundleDigest": "sha256:1212121212121212121212121212121212121212121212121212121212121212",
+  "artifacts": [
+    {
+      "id": "receipt-011",
+      "type": "execution-receipt",
+      "path": "artifacts/execution-receipt.json",
+      "hash": "sha256:6d259086063c8c1f4d68007778187eb0c55b538cdaf8d8369c95ae4cc154236d"
+    }
+  ]
+}

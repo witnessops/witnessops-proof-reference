@@ -1,0 +1,8 @@
+{
+  "status": "invalid",
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/invalid-manifest-malformed",
+  "bundleDigest": "sha256:invalid-manifest-malformed",
+  "errors": ["FAILURE_BUNDLE_MALFORMED", "FAILURE_REQUIRED_FIELD_MISSING"],
+  "verifiedArtifacts": []
+}

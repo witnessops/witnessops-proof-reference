@@ -1,0 +1,8 @@
+{
+  "status": "invalid",
+  "protocolVersion": "2.0.0",
+  "bundleUri": "vm://bundle/invalid-protocol-version-unsupported",
+  "bundleDigest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+  "errors": ["FAILURE_PROTOCOL_VERSION_UNSUPPORTED"],
+  "verifiedArtifacts": []
+}

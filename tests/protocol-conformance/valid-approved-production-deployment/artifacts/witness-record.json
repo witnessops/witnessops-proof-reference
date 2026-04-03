@@ -1,0 +1,8 @@
+{
+  "id": "witness-record-deploy-001",
+  "type": "witness-record",
+  "producer": "Qin",
+  "timestamp": "2026-03-22T11:48:00Z",
+  "lineage": ["trace-deploy-001"],
+  "signature": "sig-valid-witness-record-deploy-001"
+}

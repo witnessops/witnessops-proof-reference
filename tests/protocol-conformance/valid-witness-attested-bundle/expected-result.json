@@ -1,0 +1,9 @@
+{
+  "status": "valid",
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/valid-witness-attested-bundle",
+  "bundleDigest": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
+  "errors": [],
+  "verifiedArtifacts": ["execution-receipt", "proof-object"],
+  "witnesses": ["witness-a", "witness-b", "witness-c"]
+}

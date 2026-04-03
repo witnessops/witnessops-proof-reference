@@ -1,0 +1,8 @@
+{
+  "id": "proof-object-deploy-001",
+  "type": "proof-object",
+  "producer": "VaultMesh",
+  "timestamp": "2026-03-22T11:52:00Z",
+  "lineage": ["receipt-deploy-001", "trace-deploy-001", "witness-record-deploy-001"],
+  "signature": "sig-valid-proof-object-deploy-001"
+}

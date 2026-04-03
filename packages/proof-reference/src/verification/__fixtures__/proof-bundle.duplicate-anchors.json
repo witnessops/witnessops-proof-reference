@@ -1,0 +1,36 @@
+{
+  "schema": "vaultmesh-proof-bundle/1",
+  "version": "1.0.0",
+  "bundleId": "pb_01duplicateanchors",
+  "bundleUri": "vm://bundle/pb_01duplicateanchors",
+  "createdAt": "2026-03-13T17:00:00.000Z",
+  "rootHash": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+  "receiptCount": 1,
+  "receipts": ["rcpt_dup_anchor_001"],
+  "traces": ["trace_dup_anchor_001"],
+  "witnessRecords": ["witness_record_dup_anchor_001"],
+  "proofObjects": ["proof_object_dup_anchor_001"],
+  "timestamps": {
+    "eventTime": "2026-03-13T16:59:00.000Z",
+    "issuedAt": "2026-03-13T17:00:00.000Z"
+  },
+  "witnesses": [
+    {
+      "id": "qin-dup-anchor-1",
+      "type": "runtime-witness",
+      "attestedAt": "2026-03-13T17:00:05.000Z"
+    }
+  ],
+  "anchors": [
+    {
+      "anchorType": "rfc3161",
+      "anchorRef": "https://tsa.example.test/tokens/duplicate-anchor",
+      "sealedAt": "2026-03-13T17:00:06.000Z"
+    },
+    {
+      "anchorType": "rfc3161",
+      "anchorRef": "https://tsa.example.test/tokens/duplicate-anchor",
+      "sealedAt": "2026-03-13T17:00:07.000Z"
+    }
+  ]
+}

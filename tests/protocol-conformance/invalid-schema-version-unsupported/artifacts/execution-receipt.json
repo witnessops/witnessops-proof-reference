@@ -1,0 +1,9 @@
+{
+  "id": "receipt-011",
+  "type": "execution-receipt",
+  "schemaVersion": "2.0.0",
+  "producer": "OFFSEC",
+  "timestamp": "2026-03-14T12:11:00Z",
+  "signature": "sig-valid-receipt-011",
+  "governedAction": "approval-recorded"
+}

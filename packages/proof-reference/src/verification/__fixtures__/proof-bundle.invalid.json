@@ -1,0 +1,25 @@
+{
+  "schema": "vaultmesh-proof-bundle/1",
+  "version": "1.0.0",
+  "bundleId": "pb_01invalidfixture",
+  "bundleUri": "vm://bundle/pb_01invalidfixture",
+  "createdAt": "2026-03-13T12:00:00.000Z",
+  "rootHash": "not-a-sha256-hash",
+  "receiptCount": 3,
+  "receipts": ["rcpt_dup", "rcpt_dup"],
+  "traces": [],
+  "witnessRecords": [],
+  "proofObjects": [],
+  "timestamps": {
+    "eventTime": "2026-03-13T12:01:00.000Z",
+    "issuedAt": "2026-03-13T12:00:00.000Z"
+  },
+  "witnesses": [],
+  "anchors": [
+    {
+      "anchorType": "rfc3161",
+      "anchorRef": "invalid-reference",
+      "sealedAt": "not-a-date"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/invalid-approved-deployment-broken-chain",
+  "bundleDigest": "sha256:5555555555555555555555555555555555555555555555555555555555555555",
+  "artifacts": [
+    {
+      "id": "receipt-deploy-bad-001",
+      "type": "execution-receipt",
+      "path": "artifacts/execution-receipt.json",
+      "hash": "sha256:72da88b6283ac087dadd2ec87ad9297d3180c6d28ced156a7416dfea7fff6b6d"
+    },
+    {
+      "id": "trace-deploy-bad-001",
+      "type": "runtime-trace",
+      "path": "artifacts/runtime-trace.json",
+      "hash": "sha256:c036d14fc34307d5f2ad0206fdd4f4129760fa4d86936e77556ff99e937d94f7"
+    },
+    {
+      "id": "proof-object-deploy-bad-001",
+      "type": "proof-object",
+      "path": "artifacts/proof-object.json",
+      "hash": "sha256:2476a65f6e894ad0e571542785eb59f8e1a12c631c03514a3be07717233ecad4"
+    }
+  ]
+}

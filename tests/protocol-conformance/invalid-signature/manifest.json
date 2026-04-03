@@ -1,0 +1,13 @@
+{
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/invalid-signature",
+  "bundleDigest": "sha256:5555555555555555555555555555555555555555555555555555555555555555",
+  "artifacts": [
+    {
+      "id": "receipt-006",
+      "type": "execution-receipt",
+      "path": "artifacts/execution-receipt.json",
+      "hash": "sha256:b335b34750cacbb82e31a727afdab6dba5e837f0983d59da2a15d1965f3db4c0"
+    }
+  ]
+}

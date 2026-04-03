@@ -1,0 +1,14 @@
+{
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/indeterminate-offline",
+  "bundleDigest": "sha256:6666666666666666666666666666666666666666666666666666666666666666",
+  "requiresTrustRegistry": true,
+  "artifacts": [
+    {
+      "id": "receipt-007",
+      "type": "execution-receipt",
+      "path": "artifacts/execution-receipt.json",
+      "hash": "sha256:aed4640defc7d331597563d96ba168df14ebb362a2224abfffdb9bb0a8b6ada0"
+    }
+  ]
+}

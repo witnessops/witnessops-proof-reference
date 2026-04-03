@@ -1,0 +1,20 @@
+{
+  "schema": "vaultmesh-proof-bundle/1",
+  "version": "1.0.0",
+  "receipts": ["rcpt_missing_001"],
+  "traces": ["trace_missing_001"],
+  "witnesses": [
+    {
+      "id": "qin-missing-1",
+      "type": "runtime-witness",
+      "attestedAt": "2026-03-13T13:00:05.000Z"
+    }
+  ],
+  "anchors": [
+    {
+      "anchorType": "rfc3161",
+      "anchorRef": "https://tsa.example.test/tokens/missing",
+      "sealedAt": "2026-03-13T13:00:06.000Z"
+    }
+  ]
+}

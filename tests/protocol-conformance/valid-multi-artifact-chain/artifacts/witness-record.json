@@ -1,0 +1,8 @@
+{
+  "id": "witness-002",
+  "type": "witness-record",
+  "producer": "Qin",
+  "timestamp": "2026-03-14T12:10:02Z",
+  "lineage": ["trace-002"],
+  "signature": "sig-valid-witness-002"
+}

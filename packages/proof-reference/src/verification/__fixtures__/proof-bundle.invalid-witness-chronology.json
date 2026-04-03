@@ -1,0 +1,31 @@
+{
+  "schema": "vaultmesh-proof-bundle/1",
+  "version": "1.0.0",
+  "bundleId": "pb_01invalidchronology",
+  "bundleUri": "vm://bundle/pb_01invalidchronology",
+  "createdAt": "2026-03-13T14:00:00.000Z",
+  "rootHash": "sha256:dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+  "receiptCount": 1,
+  "receipts": ["rcpt_chronology_001"],
+  "traces": ["trace_chronology_001"],
+  "witnessRecords": ["witness_record_chronology_001"],
+  "proofObjects": ["proof_object_chronology_001"],
+  "timestamps": {
+    "eventTime": "2026-03-13T13:59:00.000Z",
+    "issuedAt": "2026-03-13T14:00:00.000Z"
+  },
+  "witnesses": [
+    {
+      "id": "qin-chronology-1",
+      "type": "runtime-witness",
+      "attestedAt": "2026-03-13T13:59:30.000Z"
+    }
+  ],
+  "anchors": [
+    {
+      "anchorType": "rfc3161",
+      "anchorRef": "https://tsa.example.test/tokens/chronology",
+      "sealedAt": "2026-03-13T14:00:06.000Z"
+    }
+  ]
+}

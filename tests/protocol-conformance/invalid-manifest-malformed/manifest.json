@@ -1,0 +1,10 @@
+{
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/invalid-manifest-malformed",
+  "artifacts": {
+    "receipt-009": {
+      "type": "execution-receipt",
+      "path": "artifacts/execution-receipt.json"
+    }
+  }
+}

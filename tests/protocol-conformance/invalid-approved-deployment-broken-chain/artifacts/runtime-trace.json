@@ -1,0 +1,9 @@
+{
+  "id": "trace-deploy-bad-001",
+  "type": "runtime-trace",
+  "producer": "Qin",
+  "timestamp": "2026-03-22T11:42:00Z",
+  "lineage": ["receipt-missing"],
+  "traceHash": "sha256:trace-valid-deploy-bad-001",
+  "signature": "sig-valid-trace-deploy-bad-001"
+}

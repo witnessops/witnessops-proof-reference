@@ -1,0 +1,16 @@
+{
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/invalid-breaking-version-change",
+  "bundleDigest": "sha256:1313131313131313131313131313131313131313131313131313131313131313",
+  "compatibility": {
+    "minimumProtocolVersion": "2.0.0"
+  },
+  "artifacts": [
+    {
+      "id": "receipt-012",
+      "type": "execution-receipt",
+      "path": "artifacts/execution-receipt.json",
+      "hash": "sha256:eca9c1f335751af5e3251520d23581004520fe147e8f0b0133e6b27dfd30fe7c"
+    }
+  ]
+}

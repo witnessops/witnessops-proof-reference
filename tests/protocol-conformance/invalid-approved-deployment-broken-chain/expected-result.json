@@ -1,0 +1,8 @@
+{
+  "status": "invalid",
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/invalid-approved-deployment-broken-chain",
+  "bundleDigest": "sha256:5555555555555555555555555555555555555555555555555555555555555555",
+  "errors": ["FAILURE_CONTRACT_VIOLATION"],
+  "verifiedArtifacts": ["execution-receipt", "runtime-trace", "proof-object"]
+}

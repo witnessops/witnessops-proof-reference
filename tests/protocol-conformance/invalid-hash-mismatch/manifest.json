@@ -1,0 +1,13 @@
+{
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/invalid-hash-mismatch",
+  "bundleDigest": "sha256:4444444444444444444444444444444444444444444444444444444444444444",
+  "artifacts": [
+    {
+      "id": "receipt-004",
+      "type": "execution-receipt",
+      "path": "artifacts/execution-receipt.json",
+      "hash": "sha256:declared-hash-does-not-match-artifact"
+    }
+  ]
+}

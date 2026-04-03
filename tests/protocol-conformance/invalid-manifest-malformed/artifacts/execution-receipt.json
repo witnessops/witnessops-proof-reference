@@ -1,0 +1,8 @@
+{
+  "id": "receipt-009",
+  "type": "execution-receipt",
+  "producer": "OFFSEC",
+  "timestamp": "2026-03-14T12:09:00Z",
+  "signature": "sig-valid-receipt-009",
+  "governedAction": "verification-requested"
+}

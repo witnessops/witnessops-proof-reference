@@ -1,0 +1,31 @@
+{
+  "schema": "vaultmesh-proof-bundle/1",
+  "version": "1.0.0",
+  "bundleId": "pb_01unsupportedanchor",
+  "bundleUri": "vm://bundle/pb_01unsupportedanchor",
+  "createdAt": "2026-03-13T18:00:00.000Z",
+  "rootHash": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
+  "receiptCount": 1,
+  "receipts": ["rcpt_unsupported_anchor_001"],
+  "traces": ["trace_unsupported_anchor_001"],
+  "witnessRecords": ["witness_record_unsupported_anchor_001"],
+  "proofObjects": ["proof_object_unsupported_anchor_001"],
+  "timestamps": {
+    "eventTime": "2026-03-13T17:59:00.000Z",
+    "issuedAt": "2026-03-13T18:00:00.000Z"
+  },
+  "witnesses": [
+    {
+      "id": "qin-unsupported-anchor-1",
+      "type": "runtime-witness",
+      "attestedAt": "2026-03-13T18:00:05.000Z"
+    }
+  ],
+  "anchors": [
+    {
+      "anchorType": "ipfs",
+      "anchorRef": "ipfs://bafybeigdyrzt",
+      "sealedAt": "2026-03-13T18:00:06.000Z"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/valid-multi-artifact-chain",
+  "bundleDigest": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+  "artifacts": [
+    {
+      "id": "receipt-002",
+      "type": "execution-receipt",
+      "path": "artifacts/execution-receipt.json",
+      "hash": "sha256:806371446d4e33e76ac62d07ca49c84e21fff711b909111c52e98f3c2a62f5a5"
+    },
+    {
+      "id": "trace-002",
+      "type": "runtime-trace",
+      "path": "artifacts/runtime-trace.json",
+      "hash": "sha256:b247cd49ffa5e8cf03ec075c7f411951cd3f1964232f644353d5d1b7706e4d9a"
+    },
+    {
+      "id": "witness-002",
+      "type": "witness-record",
+      "path": "artifacts/witness-record.json",
+      "hash": "sha256:968642c214c2f09d867f2a3992aacfabd81d883ddd1811acdd668b00dab2c851"
+    },
+    {
+      "id": "proof-object-002",
+      "type": "proof-object",
+      "path": "artifacts/proof-object.json",
+      "hash": "sha256:e4da5a4774731eb0ac168b94341066100728d6d3f187b9cadaab7375147ad71d"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "witnessops-proof-reference-workspace",
+  "private": true,
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "build": "pnpm --filter @witnessops/proof-reference build",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "tsc -p tsconfig.json --pretty false",
+    "test": "pnpm --filter @witnessops/proof-reference test && pnpm protocol:validate-corpus && pnpm protocol:run-corpus",
+    "protocol:validate-corpus": "node --import tsx ./scripts/validate-protocol-corpus.ts",
+    "protocol:run-corpus": "node --import tsx ./scripts/run-protocol-corpus.ts"
+  },
+  "dependencies": {
+    "@witnessops/proof-reference": "workspace:*"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.22.0",
+    "globals": "^16.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.29.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "indeterminate",
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/indeterminate-offline",
+  "bundleDigest": "sha256:6666666666666666666666666666666666666666666666666666666666666666",
+  "errors": [],
+  "verifiedArtifacts": ["execution-receipt"],
+  "indeterminateReason": "trust-registry-unavailable"
+}

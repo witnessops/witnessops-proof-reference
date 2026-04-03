@@ -1,0 +1,9 @@
+{
+  "id": "proof-object-013",
+  "type": "proof-object",
+  "producer": "VaultMesh",
+  "timestamp": "2026-03-14T12:13:04Z",
+  "lineage": ["receipt-013"],
+  "bundleDigest": "sha256:1414141414141414141414141414141414141414141414141414141414141414",
+  "verificationInstructions": ["verify-lineage", "verify-witness"]
+}

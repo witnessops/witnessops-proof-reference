@@ -1,0 +1,8 @@
+{
+  "status": "valid",
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/valid-multi-artifact-chain",
+  "bundleDigest": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+  "errors": [],
+  "verifiedArtifacts": ["execution-receipt", "runtime-trace", "witness-record", "proof-object"]
+}

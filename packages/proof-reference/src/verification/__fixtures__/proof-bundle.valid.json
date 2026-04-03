@@ -1,0 +1,46 @@
+{
+  "schema": "vaultmesh-proof-bundle/1",
+  "version": "1.0.0",
+  "bundleId": "pb_01validfixture",
+  "bundleUri": "vm://bundle/pb_01validfixture",
+  "createdAt": "2026-03-13T10:00:00.000Z",
+  "rootHash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "issuer": {
+    "id": "vaultmesh",
+    "name": "VaultMesh",
+    "publicKeyFingerprint": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  "subject": {
+    "type": "deployment",
+    "description": "Governed deployment execution",
+    "scope": "prod/eu-west"
+  },
+  "timestamps": {
+    "eventTime": "2026-03-13T09:58:00.000Z",
+    "issuedAt": "2026-03-13T10:00:00.000Z",
+    "expiresAt": "2027-03-13T10:00:00.000Z"
+  },
+  "receiptCount": 2,
+  "receipts": ["rcpt_001", "rcpt_002"],
+  "traces": ["trace_001"],
+  "witnessRecords": ["witness_record_001"],
+  "proofObjects": ["proof_object_001"],
+  "witnesses": [
+    {
+      "id": "qin-witness-1",
+      "type": "runtime-witness",
+      "attestedAt": "2026-03-13T10:00:05.000Z"
+    }
+  ],
+  "anchors": [
+    {
+      "anchorType": "rfc3161",
+      "anchorRef": "https://tsa.example.test/tokens/abc123",
+      "sealedAt": "2026-03-13T10:00:06.000Z"
+    }
+  ],
+  "tags": ["governed-execution", "fixture"],
+  "metadata": {
+    "env": "test"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "id": "witness-runtime-observer",
+  "type": "runtime-observer",
+  "bundleDigest": "sha256:4444444444444444444444444444444444444444444444444444444444444444",
+  "signature": "sig-valid-witness-runtime-observer"
+}

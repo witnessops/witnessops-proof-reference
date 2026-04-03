@@ -1,0 +1,9 @@
+{
+  "status": "invalid",
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/invalid-witness-lineage-mismatch",
+  "bundleDigest": "sha256:1414141414141414141414141414141414141414141414141414141414141414",
+  "errors": ["FAILURE_WITNESS_LINEAGE_MISMATCH"],
+  "verifiedArtifacts": ["execution-receipt", "proof-object"],
+  "witnesses": ["witness-a", "witness-b"]
+}

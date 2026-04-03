@@ -1,0 +1,8 @@
+{
+  "id": "proof-object-001",
+  "type": "proof-object",
+  "producer": "VaultMesh",
+  "timestamp": "2026-03-22T00:00:05Z",
+  "lineage": ["receipt-001"],
+  "verificationInstructions": ["verify-signature", "verify-lineage"]
+}

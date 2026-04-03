@@ -1,0 +1,8 @@
+{
+  "id": "receipt-007",
+  "type": "execution-receipt",
+  "producer": "OFFSEC",
+  "timestamp": "2026-03-14T13:00:00Z",
+  "signature": "sig-valid-receipt-007",
+  "trustRegistryRef": "registry://vaultmesh/public/issuer-v1"
+}

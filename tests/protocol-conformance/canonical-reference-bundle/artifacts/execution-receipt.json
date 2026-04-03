@@ -1,0 +1,8 @@
+{
+  "id": "receipt-001",
+  "type": "execution-receipt",
+  "producer": "VaultMesh",
+  "timestamp": "2026-03-22T00:00:00Z",
+  "signature": "sig-valid-receipt-001",
+  "governedAction": "canonical-reference-verification"
+}

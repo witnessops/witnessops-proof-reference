@@ -1,0 +1,8 @@
+{
+  "id": "receipt-013",
+  "type": "execution-receipt",
+  "producer": "OFFSEC",
+  "timestamp": "2026-03-14T12:13:00Z",
+  "signature": "sig-valid-receipt-013",
+  "governedAction": "witness-review-requested"
+}

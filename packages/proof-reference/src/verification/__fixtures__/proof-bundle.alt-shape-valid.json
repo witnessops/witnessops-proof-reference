@@ -1,0 +1,40 @@
+{
+  "schema": "vaultmesh-proof-bundle/1",
+  "version": "1.1.0",
+  "id": "pb_01altshapevalid",
+  "uri": "vm://bundle/pb_01altshapevalid",
+  "timestamps": {
+    "issuedAt": "2026-03-13T15:00:00.000Z",
+    "eventTime": "2026-03-13T14:58:00.000Z",
+    "expiresAt": "2027-03-13T15:00:00.000Z"
+  },
+  "evidence_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "issuer": {
+    "id": "vaultmesh-alt",
+    "name": "VaultMesh Alt",
+    "public_key_fingerprint": "sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  },
+  "subject": {
+    "type": "assessment",
+    "description": "Alternative normalized assessment bundle",
+    "scope": "prod/us-east"
+  },
+  "receipts": ["rcpt_alt_001"],
+  "traces": ["trace_alt_001"],
+  "witness_records": ["witness_record_alt_001"],
+  "proof_objects": ["proof_object_alt_001"],
+  "witnesses": [
+    {
+      "id": "qin-alt-1",
+      "attested_at": "2026-03-13T15:00:05.000Z"
+    }
+  ],
+  "anchors": [
+    {
+      "type": "btc",
+      "reference": "btc:000000000000000000000000000000000000000000000000000000000000abcd",
+      "timestamp": "2026-03-13T15:00:06.000Z"
+    }
+  ],
+  "tags": ["alternate-shape", "fixture"]
+}

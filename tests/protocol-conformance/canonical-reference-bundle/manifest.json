@@ -1,0 +1,19 @@
+{
+  "protocolVersion": "1.0.0",
+  "bundleUri": "vm://bundle/canonical-reference-bundle",
+  "bundleDigest": "sha256:0000000000000000000000000000000000000000000000000000000000000001",
+  "artifacts": [
+    {
+      "id": "receipt-001",
+      "type": "execution-receipt",
+      "path": "artifacts/execution-receipt.json",
+      "hash": "sha256:293b9309542cccea5c19ebeeefc0c9f383cf95ec4b4e6e2e0a1db352e0decda2"
+    },
+    {
+      "id": "proof-object-001",
+      "type": "proof-object",
+      "path": "artifacts/proof-object.json",
+      "hash": "sha256:0012905a14d00be5702415a1bf06c3585bb3879beb9e75585683e1d5398239f7"
+    }
+  ]
+}
