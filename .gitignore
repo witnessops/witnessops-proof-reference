@@ -3,4 +3,5 @@ dist
 coverage
 .turbo
 *.tsbuildinfo
+.DS_Store
 pnpm-debug.log*
