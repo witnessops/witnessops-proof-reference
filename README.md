@@ -2,6 +2,16 @@
 
 Canonical reference implementation and frozen test corpus for the WitnessOps proof-bundle verification protocol.
 
+## Public role
+
+This repository is the public protocol and reference-verification surface in the WitnessOps proof path.
+
+It helps an external reader inspect how proof bundles are checked, how verifier output is shaped, and how protocol conformance is frozen against known cases.
+
+Trust boundary: this repository is source code and test corpus. It is not, by itself, proof that a production workflow occurred.
+
+A workflow claim is only treated as verified when the concrete proof bundle, manifest, artifacts, receipt, signer or key reference, and verifier result are present for that claim.
+
 ## What this repo is
 
 A library and corpus repo. Not an app, not a service, not a deployment target.
@@ -21,10 +31,11 @@ It owns:
 - `proofs/**` (deferred to a later slice)
 - A consumer of `@public-surfaces/*` — no such imports exist or are permitted
 - A package with external runtime dependencies — dev tooling only (TypeScript, ESLint, tsx)
+- Proof that an operational event happened outside the supplied bundle artifacts
 
 ## Package exports
 
-`@witnessops/proof-reference` exports three paths:
+`@witnessops/proof-reference` exports four paths:
 
 | Export path | Entry | Contents |
 |---|---|---|
@@ -44,12 +55,34 @@ Each case in `tests/protocol-conformance/` is a self-contained bundle with:
 
 Case names are stable once published. The `expected-result.json` is the single source of truth for what the verifier must produce for that case.
 
+## Verification boundary
+
+The reference verifier can check the artifacts it is given. It does not infer missing authority, missing execution, or missing evidence.
+
+Treat a result as bounded to the provided bundle inputs and verifier contract.
+
+A passing verifier result can support claims about:
+
+- bundle structure
+- artifact references
+- expected verifier output shape
+- protocol conformance for frozen corpus cases
+- checks implemented by the verifier core
+
+A passing verifier result does not, by itself, prove:
+
+- that an omitted operational event occurred
+- that a human approval happened outside the bundle
+- that a signer was authorized outside the referenced key or authority material
+- that a production workflow completed if completion artifacts are absent
+- that downstream presentation text is accurate
+
 ## Health
 
 See [commands.md](commands.md) for the full validation chain with explanations.
 
 Quick check:
 
-```
+```bash
 pnpm build && pnpm lint && pnpm typecheck && pnpm test
 ```
