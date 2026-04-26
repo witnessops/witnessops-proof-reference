@@ -11,12 +11,16 @@ import { loadCanonicalDirectory, LoadCanonicalDirectoryError } from "./load-cano
 import { MalformedBundleError } from "./proof-bundle";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const repoRoot = path.resolve(__dirname, "../../../..");
-const vmFoundryRepoDir =
-  process.env.VM_FOUNDRY_REPO_DIR ?? path.resolve(repoRoot, "../vm-foundry");
+const containedVmFoundrySeamFixture = path.resolve(
+  __dirname,
+  "__fixtures__/external-seams/vm-foundry/proof_bundle_v0.1_quickcheck",
+);
+const externalVmFoundryRepoDir = process.env.VM_FOUNDRY_REPO_DIR;
 const vmFoundryBundleDir =
   process.env.VM_FOUNDRY_BUNDLE_DIR ??
-  path.join(vmFoundryRepoDir, "m365/proof/v0.1/out/proof_bundle_v0.1_quickcheck");
+  (externalVmFoundryRepoDir
+    ? path.join(externalVmFoundryRepoDir, "m365/proof/v0.1/out/proof_bundle_v0.1_quickcheck")
+    : containedVmFoundrySeamFixture);
 
 async function loadDirectoryRecursively(dir: string, root = dir): Promise<Map<string, Buffer>> {
   const files = new Map<string, Buffer>();
@@ -42,7 +46,7 @@ async function loadDirectoryRecursively(dir: string, root = dir): Promise<Map<st
   return files;
 }
 
-test("vm-foundry bundle seam fixture is present and self-reports producer-side verification success", async () => {
+test("contained vm-foundry seam fixture self-reports producer-side verification success", async () => {
   const bundleStat = await stat(vmFoundryBundleDir);
   assert.ok(bundleStat.isDirectory(), `expected directory bundle fixture at ${vmFoundryBundleDir}`);
 
@@ -61,7 +65,7 @@ test("vm-foundry bundle seam fixture is present and self-reports producer-side v
   assert.deepEqual(report.issues, []);
 });
 
-test("public canonical directory loader rejects vm-foundry bundle layout as non-canonical", async () => {
+test("public canonical directory loader rejects vm-foundry seam fixture as non-canonical", async () => {
   await assert.rejects(
     () => loadCanonicalDirectory(vmFoundryBundleDir),
     (error: unknown) =>
@@ -70,7 +74,7 @@ test("public canonical directory loader rejects vm-foundry bundle layout as non-
   );
 });
 
-test("public canonical verifier rejects vm-foundry bundle with explicit manifest-missing failure", async () => {
+test("public canonical verifier rejects vm-foundry seam fixture with explicit manifest-missing failure", async () => {
   const files = await loadDirectoryRecursively(vmFoundryBundleDir);
   const result = await verifyCanonicalBundle(
     { files, source: "directory" },
@@ -83,7 +87,7 @@ test("public canonical verifier rejects vm-foundry bundle with explicit manifest
   assert.deepEqual(result.verifiedArtifacts, []);
 });
 
-test("public canonical app adapter returns stable missing-manifest failure for vm-foundry bundle", async () => {
+test("public canonical app adapter returns stable missing-manifest failure for vm-foundry seam fixture", async () => {
   const files = await loadDirectoryRecursively(vmFoundryBundleDir);
   const response = await verifyCanonicalBundleRequest(files);
 
