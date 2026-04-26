@@ -1,0 +1,11 @@
+{
+  "schema": "vaultmesh.proof.public.v0.1",
+  "fixture_kind": "contained_negative_seam",
+  "producer_surface": "vm-foundry-like",
+  "canonical_manifest_present": false,
+  "notes": [
+    "This file intentionally omits required legacy proof-bundle manifest fields.",
+    "It is not producer evidence and is not a vm-foundry receipt.",
+    "It exists only to prove MANIFEST_MISSING rejection semantics."
+  ]
+}
