@@ -1,0 +1,43 @@
+name: "Canary: emit signed protocol-corpus receipt"
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch: {}
+
+jobs:
+  emit-receipt:
+    name: Emit signed receipt for protocol corpus manifest
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          fetch-depth: 0
+
+      - name: Install cosign
+        uses: sigstore/cosign-installer@ba7bc0a3fef59531c69a25acd34668d6d3fe6f22
+        with:
+          cosign-release: v3.0.3
+
+      - name: Emit receipt
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_SHA: ${{ github.sha }}
+          MANIFEST_PATH: tests/protocol-conformance/PROTOCOL_CORPUS_MANIFEST.v1.yaml
+          RECEIPT_BASENAME: protocol-corpus-manifest.diff
+        run: |
+          chmod +x tools/emit_receipt.sh
+          tools/emit_receipt.sh
+
+      - name: Upload receipt artifacts
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        with:
+          name: protocol-corpus-receipts
+          path: |
+            receipts/protocol-corpus-manifest.diff
+            receipts/protocol-corpus-manifest.diff.sha256
+            receipts/protocol-corpus-manifest.diff.sigstore.json
