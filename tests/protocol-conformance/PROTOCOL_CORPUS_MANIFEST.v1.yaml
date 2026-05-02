@@ -1,0 +1,77 @@
+schema: witnessops.protocol_corpus_manifest.v1
+manifest_purpose: stable public index for protocol-conformance receipt canary
+
+source_contract:
+  corpus_root: tests/protocol-conformance
+  expected_result_truth: expected-result.json
+  validator: scripts/validate-protocol-corpus.ts
+  executable_runner: scripts/run-protocol-corpus.ts
+
+authority_boundary:
+  owns:
+    - protocol conformance corpus inventory signal
+    - CI receipt canary input
+    - public reference-surface change receipt target
+  does_not_own:
+    - production workflow occurrence
+    - producer-side proof execution
+    - verifier acceptance semantics
+    - signing key authority
+    - customer evidence
+    - runtime deployment
+
+corpus_cases:
+  - id: canonical-reference-bundle
+    path: tests/protocol-conformance/canonical-reference-bundle
+    expected_result: tests/protocol-conformance/canonical-reference-bundle/expected-result.json
+  - id: indeterminate-offline
+    path: tests/protocol-conformance/indeterminate-offline
+    expected_result: tests/protocol-conformance/indeterminate-offline/expected-result.json
+  - id: invalid-approved-deployment-broken-chain
+    path: tests/protocol-conformance/invalid-approved-deployment-broken-chain
+    expected_result: tests/protocol-conformance/invalid-approved-deployment-broken-chain/expected-result.json
+  - id: invalid-breaking-version-change
+    path: tests/protocol-conformance/invalid-breaking-version-change
+    expected_result: tests/protocol-conformance/invalid-breaking-version-change/expected-result.json
+  - id: invalid-hash-mismatch
+    path: tests/protocol-conformance/invalid-hash-mismatch
+    expected_result: tests/protocol-conformance/invalid-hash-mismatch/expected-result.json
+  - id: invalid-manifest-malformed
+    path: tests/protocol-conformance/invalid-manifest-malformed
+    expected_result: tests/protocol-conformance/invalid-manifest-malformed/expected-result.json
+  - id: invalid-protocol-version-unsupported
+    path: tests/protocol-conformance/invalid-protocol-version-unsupported
+    expected_result: tests/protocol-conformance/invalid-protocol-version-unsupported/expected-result.json
+  - id: invalid-schema-version-unsupported
+    path: tests/protocol-conformance/invalid-schema-version-unsupported
+    expected_result: tests/protocol-conformance/invalid-schema-version-unsupported/expected-result.json
+  - id: invalid-signature
+    path: tests/protocol-conformance/invalid-signature
+    expected_result: tests/protocol-conformance/invalid-signature/expected-result.json
+  - id: invalid-witness-lineage-mismatch
+    path: tests/protocol-conformance/invalid-witness-lineage-mismatch
+    expected_result: tests/protocol-conformance/invalid-witness-lineage-mismatch/expected-result.json
+  - id: invalid-witness-quorum-unsatisfied
+    path: tests/protocol-conformance/invalid-witness-quorum-unsatisfied
+    expected_result: tests/protocol-conformance/invalid-witness-quorum-unsatisfied/expected-result.json
+  - id: missing-manifest-bundle
+    path: tests/protocol-conformance/missing-manifest-bundle
+    expected_result: tests/protocol-conformance/missing-manifest-bundle/expected-result.json
+  - id: valid-approved-production-deployment
+    path: tests/protocol-conformance/valid-approved-production-deployment
+    expected_result: tests/protocol-conformance/valid-approved-production-deployment/expected-result.json
+  - id: valid-minimal-bundle
+    path: tests/protocol-conformance/valid-minimal-bundle
+    expected_result: tests/protocol-conformance/valid-minimal-bundle/expected-result.json
+  - id: valid-multi-artifact-chain
+    path: tests/protocol-conformance/valid-multi-artifact-chain
+    expected_result: tests/protocol-conformance/valid-multi-artifact-chain/expected-result.json
+  - id: valid-witness-attested-bundle
+    path: tests/protocol-conformance/valid-witness-attested-bundle
+    expected_result: tests/protocol-conformance/valid-witness-attested-bundle/expected-result.json
+
+receipt_canary:
+  diff_receipt_payload: receipts/protocol-corpus-manifest.diff
+  checksum: receipts/protocol-corpus-manifest.diff.sha256
+  sigstore_bundle: receipts/protocol-corpus-manifest.diff.sigstore.json
+  signer: github-actions-oidc-keyless-cosign
