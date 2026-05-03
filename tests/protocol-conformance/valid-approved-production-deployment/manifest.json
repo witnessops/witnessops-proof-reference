@@ -12,25 +12,25 @@
       "id": "receipt-deploy-001",
       "type": "execution-receipt",
       "path": "artifacts/execution-receipt.json",
-      "hash": "sha256:1428384282a0f82fa1e9cfdde9a42c8318a6a72efd74ecf021c34ae487b991d2"
+      "hash": "sha256:7f727333aa6cb5fd3f4dd82abb540ffd8fd26b1e1da409572283dd173a582e44"
     },
     {
       "id": "trace-deploy-001",
       "type": "runtime-trace",
       "path": "artifacts/runtime-trace.json",
-      "hash": "sha256:9ea97327696634f996ec5e336839926e9ec5a3ba70d09ecb177aae9465fac067"
+      "hash": "sha256:aa293fe42b3b70d3616ea09287a623a8be10c9a22e305d146130dd433f91ae22"
     },
     {
       "id": "witness-record-deploy-001",
       "type": "witness-record",
       "path": "artifacts/witness-record.json",
-      "hash": "sha256:368f68bddee78d9c63e2f1fb15aed3c59ef17353ad2268bbb41ef48fb89e6aa9"
+      "hash": "sha256:84efe0a83efa3e7711969b632a1ee4714bde96e0f80d5c01e33a3bd13f58aa73"
     },
     {
       "id": "proof-object-deploy-001",
       "type": "proof-object",
       "path": "artifacts/proof-object.json",
-      "hash": "sha256:6d5db17e3d8beaba1fb6e29e505483184303806185223cdd49a91f0f2b90e919"
+      "hash": "sha256:13e43d35afe31a1abe10057616d496def396b12eae570ea0d62ad40a974596bb"
     }
   ]
 }

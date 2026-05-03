@@ -2,5 +2,5 @@
   "id": "witness-a",
   "type": "attestation-witness",
   "bundleDigest": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
-  "signature": "sig-valid-witness-a"
+  "signature": "c2lnLXZhbGlkLXdpdG5lc3MtYQ=="
 }

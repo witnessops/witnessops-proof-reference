@@ -42,6 +42,7 @@ export interface CanonicalVerificationEvidence {
 const V1_LIMITS: string[] = [
   "Does not perform trust registry resolution",
   "Does not perform anchor verification in v1",
+  "Does not cryptographically verify artifact signatures in v1 (format checks only)",
   "Does not imply compliance, certification, or regulatory approval",
 ];
 
@@ -65,7 +66,7 @@ function deriveClaims(result: CanonicalVerificationResult): EvidenceClaim[] {
 
   if (result.status === "valid") {
     claims.push({
-      claim: "All artifact signatures were validated",
+      claim: "Artifact signatures were well-formed where present (format-only; not cryptographically verified)",
       supportedBy: ["verifiedArtifacts"],
     });
   }

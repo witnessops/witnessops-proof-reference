@@ -10,7 +10,7 @@
       "id": "receipt-012",
       "type": "execution-receipt",
       "path": "artifacts/execution-receipt.json",
-      "hash": "sha256:eca9c1f335751af5e3251520d23581004520fe147e8f0b0133e6b27dfd30fe7c"
+      "hash": "sha256:ce5dea275b44755aef033bfc5600bef68ae98e9c1c2ba9b9d6d7bf29816ed488"
     }
   ]
 }

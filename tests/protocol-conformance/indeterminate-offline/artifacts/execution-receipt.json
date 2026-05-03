@@ -3,6 +3,6 @@
   "type": "execution-receipt",
   "producer": "OFFSEC",
   "timestamp": "2026-03-14T13:00:00Z",
-  "signature": "sig-valid-receipt-007",
+  "signature": "c2lnLXZhbGlkLXJlY2VpcHQtMDA3",
   "trustRegistryRef": "registry://vaultmesh/public/issuer-v1"
 }
