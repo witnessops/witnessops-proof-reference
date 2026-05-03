@@ -3,5 +3,5 @@
   "type": "attestation-witness",
   "bundleDigest": "sha256:1414141414141414141414141414141414141414141414141414141414141414",
   "lineage": ["receipt-013", "missing-proof-013"],
-  "signature": "sig-valid-witness-013-b"
+  "signature": "c2lnLXZhbGlkLXdpdG5lc3MtMDEzLWI="
 }

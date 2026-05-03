@@ -7,19 +7,19 @@
       "id": "receipt-deploy-bad-001",
       "type": "execution-receipt",
       "path": "artifacts/execution-receipt.json",
-      "hash": "sha256:72da88b6283ac087dadd2ec87ad9297d3180c6d28ced156a7416dfea7fff6b6d"
+      "hash": "sha256:2540fa0bf1bf7625b2e0b1f4fe1f3f16a1d3a6aa762e5e60bbaf4724aea7f89c"
     },
     {
       "id": "trace-deploy-bad-001",
       "type": "runtime-trace",
       "path": "artifacts/runtime-trace.json",
-      "hash": "sha256:c036d14fc34307d5f2ad0206fdd4f4129760fa4d86936e77556ff99e937d94f7"
+      "hash": "sha256:c19224d783349725d263e13aa99a4dafdb464c06c1b61d6c528a7021336cb7d4"
     },
     {
       "id": "proof-object-deploy-bad-001",
       "type": "proof-object",
       "path": "artifacts/proof-object.json",
-      "hash": "sha256:2476a65f6e894ad0e571542785eb59f8e1a12c631c03514a3be07717233ecad4"
+      "hash": "sha256:891e32327f6c1c93625559c9aad648156bfef017ba98972d2ab60125f223e232"
     }
   ]
 }

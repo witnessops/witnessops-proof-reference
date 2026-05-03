@@ -79,7 +79,7 @@ test("evidence: invalid bundle preserves errors and bounded claims", async () =>
   const claimTexts = evidence.claims.map(c => c.claim);
   assert.ok(claimTexts.some(c => c.includes("failures")));
   // Should not claim signatures validated on invalid result
-  assert.ok(!claimTexts.some(c => c === "All artifact signatures were validated"));
+  assert.ok(!claimTexts.some(c => c === "Artifact signatures were well-formed where present (format-only; not cryptographically verified)"));
 });
 
 // ── Indeterminate result ──

@@ -152,7 +152,41 @@ export function findDuplicateAnchorReference<
 
 export function hasValidSignatureSignature(value: unknown) {
   const signature = asNonEmptyString(value);
-  return signature === undefined || signature.startsWith("sig-valid-");
+  if (signature === undefined) {
+    return true;
+  }
+
+  // Strict base64/base64url check: avoid accepting placeholder prefixes like
+  // "sig-valid-*" which can be attacker-controlled and are not signatures.
+  if (/\s/.test(signature)) {
+    return false;
+  }
+
+  const base64Re =
+    /^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/;
+  const base64UrlRe =
+    /^(?:[A-Za-z0-9_-]{4})*(?:[A-Za-z0-9_-]{2}==|[A-Za-z0-9_-]{3}=)?$/;
+
+  if (!base64Re.test(signature) && !base64UrlRe.test(signature)) {
+    return false;
+  }
+
+  const decoded = Buffer.from(signature, "base64");
+  if (decoded.byteLength === 0) {
+    return false;
+  }
+
+  const b64 = decoded.toString("base64");
+  const b64NoPad = b64.replace(/=+$/g, "");
+  const b64url = decoded.toString("base64url");
+  const b64urlNoPad = b64url.replace(/=+$/g, "");
+
+  return (
+    signature === b64 ||
+    signature === b64NoPad ||
+    signature === b64url ||
+    signature === b64urlNoPad
+  );
 }
 
 export function findMissingLineageReferences(

@@ -20,6 +20,7 @@ import {
 const V1_LIMITS = [
   "Does not perform trust registry resolution",
   "Does not perform anchor verification in v1",
+  "Does not cryptographically verify artifact signatures in v1 (format checks only)",
   "Does not imply compliance, certification, or regulatory approval",
 ];
 
@@ -71,9 +72,12 @@ export function canonicalResultToRenderModel(
     id: CHECK_IDS.SIGNATURE_VALIDATION,
     label: CHECK_LABELS[CHECK_IDS.SIGNATURE_VALIDATION]!,
     status: sigFailed ? "fail" : "pass",
-    summary: sigFailed ? "Invalid signature detected" : "All signatures validated",
+    summary: sigFailed
+      ? "Malformed signature detected"
+      : "Signature fields well-formed (format-only check)",
     basis: ["artifacts/*"],
-    failureMode: "Invalid signature means artifact cannot be authenticated",
+    failureMode:
+      "Malformed signature means artifact signature cannot be parsed (this does not perform cryptographic verification)",
   });
 
   // Bundle digest binding
@@ -123,7 +127,10 @@ export function canonicalResultToRenderModel(
     claims.push({ claim: "Artifact integrity verified against canonical manifest (SHA-256 over raw bytes)", supportedBy: ["bundleDigest", "verifiedArtifacts"] });
   }
   if (result.status === "valid") {
-    claims.push({ claim: "All artifact signatures validated", supportedBy: ["verifiedArtifacts"] });
+    claims.push({
+      claim: "Artifact signatures were well-formed where present (format-only; not cryptographically verified)",
+      supportedBy: ["verifiedArtifacts"],
+    });
   }
   if (witnessCount > 0 && !witnessInvalid) {
     claims.push({ claim: "Independent witness attestations evaluated", supportedBy: ["witnesses"] });

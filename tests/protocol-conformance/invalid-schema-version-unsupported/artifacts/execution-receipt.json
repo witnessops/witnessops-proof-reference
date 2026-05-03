@@ -4,6 +4,6 @@
   "schemaVersion": "2.0.0",
   "producer": "OFFSEC",
   "timestamp": "2026-03-14T12:11:00Z",
-  "signature": "sig-valid-receipt-011",
+  "signature": "c2lnLXZhbGlkLXJlY2VpcHQtMDEx",
   "governedAction": "approval-recorded"
 }

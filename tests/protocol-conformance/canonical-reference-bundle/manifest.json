@@ -7,7 +7,7 @@
       "id": "receipt-001",
       "type": "execution-receipt",
       "path": "artifacts/execution-receipt.json",
-      "hash": "sha256:293b9309542cccea5c19ebeeefc0c9f383cf95ec4b4e6e2e0a1db352e0decda2"
+      "hash": "sha256:91139cd034ee82c7463ccf7c0d6ca4b7c8cde60e17dca47689775188e44333f5"
     },
     {
       "id": "proof-object-001",

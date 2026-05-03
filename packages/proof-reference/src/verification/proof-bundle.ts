@@ -8,7 +8,7 @@
 //   - no per-artifact signature-bearing JSON payloads exist
 //
 // Use this path for structural checks only. For canonical bundle
-// verification with hash and signature assurance, use verify-canonical.ts.
+// verification with hash integrity and signature-field checks, use verify-canonical.ts.
 //
 // @see ADR-001-canonical-bundle-contract.md
 // ──────────────────────────────────────────────────────────────────

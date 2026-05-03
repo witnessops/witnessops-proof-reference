@@ -7,7 +7,7 @@
       "id": "receipt-002",
       "type": "execution-receipt",
       "path": "artifacts/execution-receipt.json",
-      "hash": "sha256:806371446d4e33e76ac62d07ca49c84e21fff711b909111c52e98f3c2a62f5a5"
+      "hash": "sha256:4202bbca269076b59a1a1ccc6157a958273aa78cd0a969785fdf49487fbe5e05"
     },
     {
       "id": "trace-002",
@@ -19,7 +19,7 @@
       "id": "witness-002",
       "type": "witness-record",
       "path": "artifacts/witness-record.json",
-      "hash": "sha256:968642c214c2f09d867f2a3992aacfabd81d883ddd1811acdd668b00dab2c851"
+      "hash": "sha256:48cdc131d79cae2e9a382774d91a89eab8f5e3077c5b8dbbf2c7af7f1e3140b8"
     },
     {
       "id": "proof-object-002",

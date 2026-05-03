@@ -3,6 +3,6 @@
   "type": "execution-receipt",
   "producer": "OFFSEC",
   "timestamp": "2026-03-14T12:08:00Z",
-  "signature": "sig-valid-receipt-008",
+  "signature": "c2lnLXZhbGlkLXJlY2VpcHQtMDA4",
   "governedAction": "release-gated"
 }

@@ -2,5 +2,5 @@
   "id": "witness-b",
   "type": "attestation-witness",
   "bundleDigest": "sha256:9999999999999999999999999999999999999999999999999999999999999999",
-  "signature": "sig-valid-witness-010-b"
+  "signature": "c2lnLXZhbGlkLXdpdG5lc3MtMDEwLWI="
 }
