@@ -6,11 +6,11 @@ This document is a repository-specific seed for Codex Security review and GitHub
 
 ## Scope
 
-This repository is the public reference implementation and frozen conformance corpus for the WitnessOps proof-bundle verification protocol.
+This repository is a public reference verifier and frozen conformance corpus for the WitnessOps proof-bundle verification protocol. It is not the canonical internal verifier implementation and is not a designated supported public verifier distribution.
 
 It owns:
 
-- verifier core under `packages/proof-reference/src/verification/`
+- reference verifier core under `packages/proof-reference/src/verification/`
 - legacy structural checks, render model, bundle identity, and shared verification primitives
 - protocol conformance corpus under `tests/protocol-conformance/`
 - corpus validation and execution scripts under `scripts/`
@@ -29,6 +29,9 @@ This repository does not own:
 - signing-key custody or key-registry authority
 - proof-engine package generation
 - public website copy
+- canonical internal verifier implementation authority (owned by `witnessops-verifier`)
+- canonical contract-schema authority (owned by `witnessops-contracts`)
+- supported public verifier distribution (unresolved)
 - `proofs/**` unless a later slice explicitly freezes it in
 - proof that an operational event happened outside the supplied bundle artifacts
 
@@ -36,8 +39,10 @@ Do not infer that a passing Codex Security review verifies any out-of-scope syst
 
 ## Authority boundaries
 
-- `main` in `witnessops/witnessops-proof-reference` is the code authority for this reference repo.
-- The conformance corpus truth for each case is `expected-result.json`.
+- `main` in `witnessops/witnessops-proof-reference` is the code authority for this reference repo only.
+- `witnessops-verifier` owns the canonical internal verifier implementation; `witnessops-contracts` owns canonical schemas.
+- Public verifier distribution remains unresolved; public availability of this repository does not designate it as that distribution.
+- The conformance corpus truth for each case is `expected-result.json` within this repository's reference contract.
 - Published corpus case names are stable; do not rename or remove them casually.
 - The verifier must match `expected-result.json` exactly for conformance cases.
 - Codex Security may identify findings and suggest patches.
@@ -49,7 +54,7 @@ Do not infer that a passing Codex Security review verifies any out-of-scope syst
 Treat the following as first-class review surfaces:
 
 1. `packages/proof-reference/src/verification/`
-   - canonical bundle verification
+   - reference bundle verification (source identifiers using “canonical” name a protocol bundle shape, not organization-wide implementation authority)
    - manifest and artifact validation
    - error-code semantics
    - render model and public result shape
