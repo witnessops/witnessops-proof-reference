@@ -4,15 +4,26 @@
 
 This repo is the retained-reference home for WitnessOps proof and corpus material. It is a library/corpus repo — not an app, not a service, not a deployment target.
 
+It is not the canonical WitnessOps verifier implementation and is not a
+designated supported public verifier distribution. Canonical internal verifier
+implementation authority belongs to `witnessops-verifier`; canonical schema
+authority belongs to `witnessops-contracts`. Public verifier distribution
+remains unresolved.
+
 ## Ownership
 
-- `packages/proof-reference/src/verification/` — verifier core (canonical bundle verification, legacy structural checks, render model, shared primitives)
+- `packages/proof-reference/src/verification/` — reference verifier core (reference bundle verification, legacy structural checks, render model, shared primitives)
 - `tests/protocol-conformance/` — frozen protocol corpus (16 cases, v1.2 contract)
 - `scripts/` — corpus schema validator and executable runner
+
+Identifiers containing “canonical” describe the package's protocol bundle shape
+and must not be presented as organization-wide verifier implementation
+authority.
 
 ## Rules
 
 - Keep the repo library/CLI/corpus only. Do not add live web/app surface code.
+- Do not describe this repository as the canonical WitnessOps verifier implementation or as the supported public verifier distribution.
 - Do not add receipt-only runtime lanes.
 - Do not import `@public-surfaces/*`.
 - Do not widen into producer-side deployment, incidents, or package lanes.
