@@ -36,7 +36,7 @@ A failure here means the corpus structure is malformed — not that the verifier
 
 ### `pnpm protocol:run-corpus`
 
-Executes the canonical verifier against all 16 corpus cases and asserts that the actual output matches `expected-result.json` for each case (after normalizing sort order).
+Executes this repository's reference verifier against all 16 corpus cases and asserts that the actual output matches `expected-result.json` for each case (after normalizing sort order).
 
 A failure here means the verifier produces different results than the frozen expected output. Either the verifier has a bug or the expected result needs updating (and that update must be justified).
 

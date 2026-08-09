@@ -4,15 +4,15 @@ We take security issues in this repository seriously. This document describes wh
 
 ## Scope
 
-This repository contains the public reference implementation and frozen conformance corpus for the WitnessOps proof-bundle verification protocol:
+This repository contains a public reference verifier and frozen conformance corpus for the WitnessOps proof-bundle verification protocol. It is not the canonical internal verifier implementation and is not a designated supported public verifier distribution:
 
-- verifier core under `packages/proof-reference/src/verification/`
+- reference verifier core under `packages/proof-reference/src/verification/`
 - protocol conformance corpus under `tests/protocol-conformance/`
 - corpus validation and execution scripts under `scripts/`
 - package exports for reference-verification and protocol-conformance consumers
 - contained external-seam fixtures used to prove bounded rejection behavior
 
-This repository does **not** contain a live web app, production service, proof-engine package generation, signing-key custody, key-registry authority, customer evidence custody, deployment authority, or production workflow evidence.
+This repository does **not** contain a live web app, production service, proof-engine package generation, signing-key custody, key-registry authority, customer evidence custody, deployment authority, production workflow evidence, canonical schema authority, or the canonical internal verifier implementation. Those last two authorities belong to `witnessops-contracts` and `witnessops-verifier`, respectively. The supported public verifier distribution remains unresolved.
 
 Reports against systems outside this repository are out of scope here and should be directed to the appropriate project or vendor.
 
